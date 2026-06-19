@@ -11,6 +11,10 @@
     --tabletoprowcolor: #f4f6f8;
     --bottomrowblue: #4fabca;
     --bottomrowlightblue: #a5dbe9;
+    --piechartindexcolor1: #2f7ed8;
+    --piechartindexcolor2: #47b5cd;
+    --piechartindexcolor3: #1b5a90;
+    --piechartindexcolor4: #a5e1ee;
 }
 
 * {
@@ -63,9 +67,9 @@ aside {
 }
 
 .blueDlogo {
-    font-size: 36px;
-    font-weight: bold;
-    color: var(--logo-blue);
+    width: 30px;
+    height: auto;
+
 }
 
 .left-rightheadercomp {
@@ -160,6 +164,128 @@ main {
     color: var(--logo-blue);
 }
 
+.revenuemap-assetallocationgraph {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    width: 100%;
+}
+
+.revenuemapbox {
+    background-color: white;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.revenuemaptext {
+    font-size: 1rem;
+    color: var(--graphstextcolor);
+    font-weight: 600;
+    text-align: left;
+    margin: 0;
+}
+
+.revenuemapsubtext {
+    font-size: 0.8rem;
+    color: var(--graphstextcolor);
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+}
+
+#regionalgeographicmap {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+}
+
+.assetallocationbox {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 16px;
+    padding: 16px;
+    gap: 12px;
+    width: 100%;
+}
+
+.assetclassallocationtext {
+    font-size: 1rem;
+    color: var(--graphstextcolor);
+    font-weight: 600;
+    text-align: left;
+    margin: 0;
+}
+
+.assetclassallocationsubtext {
+    font-size: 0.8rem;
+    color: var(--graphstextcolor);
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+}
+
+.piechartImg-piechartValues {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+
+#piechartassets {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+}
+
+.assetspiechartindex {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.assetchartindex {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.colorbox {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+}
+
+.colorbox1 {
+    background-color: var(--piechartindexcolor1);
+}
+
+.colorbox2 {
+    background-color: var(--piechartindexcolor2);
+}
+
+.colorbox3 {
+    background-color: var(--piechartindexcolor3);
+}
+
+.colorbox4 {
+    background-color: var(--piechartindexcolor4);
+}
+
+.assetindextext {
+    font-size: 0.8rem;
+    color: var(--graphstextcolor);
+    font-weight: 500;
+}
+
 .graphscontainer {
     display: grid;
     grid-template-columns: 1fr;
@@ -245,7 +371,7 @@ body {
 }
 
 .blueDlogo {
-    font-size: 3.6rem;
+    width: 60px;
     padding-left: 20px;
 }
 
@@ -259,12 +385,19 @@ body {
 
 main {
     padding: 24px;
-    gap:24px;
+    gap: 24px;
 }
 
 .boxes4 {
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
+}
+
+.revenuemap-assetallocationgraph {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+    width: 100%;
 }
 
 /* .graphscontainer {
@@ -277,8 +410,9 @@ aside {
     flex-direction: column;
     align-items: flex-start;
     background-color: var(--sidebarbgcolor);
-    padding: 20px 0;
-    gap: 30px;
+    padding: 20px 0px;
+    gap: 10px;
+    height: 100%;
 }
 
 .Dlogo {
@@ -286,6 +420,10 @@ aside {
     font-weight: 700;
     color: var(--logo-blue);
     padding-right: 9px;
+}
+
+.component1 {
+    border-bottom: solid 2px var(--sidebartextcolor);
 }
 
 .sidebar {
@@ -314,6 +452,39 @@ aside {
     border-radius: 5px;
 }
 
+.logout-helpbuttons {
+    display: flex;
+    margin-top: auto;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 15px;
+    color: var(--sidebartextcolor);
+}
+
+#logouticon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#helpicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#logouticon:hover {
+    background-color: white;
+    border-radius: 5px;
+}
+
+#helpicon:hover {
+    background-color: white;
+    border-radius: 5px;
+}
+
 footer {
     display: none;
 }
@@ -338,7 +509,7 @@ footer {
 }
 
 .blueDlogo {
-    font-size: 4.2rem;
+    width: 90px;
     padding-left: 40px;
 }
 
